@@ -1,0 +1,52 @@
+{
+  "name": "vue-diff-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@types/core-js": "^2.5.3",
+    "@types/diff": "^4.0.2",
+    "@types/vue": "^2.0.0",
+    "@types/vue-router": "^2.0.0",
+    "core-js": "^3.6.5",
+    "diff": "^4.0.2",
+    "element-ui": "^2.13.2",
+    "vue": "^2.6.11",
+    "vue-code-diff": "^0.0.4",
+    "vue-router": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^6.8.1",
+    "@types/less": "^3.0.1",
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-plugin-router": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
