@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+
+    <!-- Javascripts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+</head>
+
+<body>
+    <h1>diff2html-ui</h1>
+    <div id="myDiffElement"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const diffString = `diff --git a/sample.js b/sample.js
+index 0000001..0ddf2ba
+--- a/sample.js
++++ b/sample.js
+@@ -1 +1 @@
+-console.log("Hello World!")
++console.log("Hello from Diff2Html!")`;
+            const targetElement = document.getElementById('myDiffElement');
+            const configuration = {
+                inputFormat: 'json',
+                drawFileList: true,
+                matching: 'lines',
+                highlight: true,
+                outputFormat: "side-by-side"
+            };
+            const diff2htmlUi = new Diff2HtmlUI(targetElement, diffString, configuration);
+            diff2htmlUi.draw();
+            diff2htmlUi.highlightCode();
+            diff2htmlUi.fileListToggle(true);
+        });
+    </script>
+
+</body>
+
+</html>

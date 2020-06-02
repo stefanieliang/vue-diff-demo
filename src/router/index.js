@@ -19,6 +19,10 @@ const routes = [{
   path: "/diff3",
   name: "diff3",
   component: () => import('../views/Diff3')
+}, {
+  path: "/Diff2Html",
+  name: "Diff2Html",
+  component: () => import('../views/Diff2Html')
 }]
 
 const router = new VueRouter({

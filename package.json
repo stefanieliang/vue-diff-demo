@@ -10,10 +10,12 @@
   "dependencies": {
     "@types/core-js": "^2.5.3",
     "@types/diff": "^4.0.2",
+    "@types/diff2html": "0.0.5",
     "@types/vue": "^2.0.0",
     "@types/vue-router": "^2.0.0",
     "core-js": "^3.6.5",
     "diff": "^4.0.2",
+    "diff2html": "^3.1.7",
     "element-ui": "^2.13.2",
     "vue": "^2.6.11",
     "vue-code-diff": "^0.0.4",
