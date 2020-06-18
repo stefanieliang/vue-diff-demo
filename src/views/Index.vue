@@ -20,6 +20,10 @@
     <h1>
       <router-link to="Diff2Html">Diff2Html.vue</router-link>
     </h1>
+    <hr />
+    <h1>
+      <router-link to="htmldiff">Htmldiff</router-link>
+    </h1>
   </div>
 </template>
 

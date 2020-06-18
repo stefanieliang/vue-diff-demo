@@ -23,6 +23,10 @@ const routes = [{
   path: "/Diff2Html",
   name: "Diff2Html",
   component: () => import('../views/Diff2Html')
+}, {
+  path: "/htmldiff",
+  name: "Htmldiff",
+  component: () => import('../views/HtmlDiffer')
 }]
 
 const router = new VueRouter({
